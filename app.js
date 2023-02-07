@@ -20,7 +20,7 @@ for (let i = 0; i < 20; i++) {
   let lastName = randChoice(lastNames);
   let age = Math.floor(Math.random() * 80) + 18;
   let phone = Math.floor(Math.random() * 1000000000) + 100000000;
-  let email = name + "." + lastName + "@gmail.com";
+  let email = name.toLowerCase() + "." + lastName.toLowerCase() + "@gmail.com";
   let person = {
     gender: gender,
     name: name,
